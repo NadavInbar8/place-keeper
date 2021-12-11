@@ -1,0 +1,29 @@
+html {
+  padding: 8px;
+}
+
+body {
+  /* display: flex; */
+  justify-content: center;
+}
+
+.main-registered {
+  background-color: lime;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 30%;
+  padding: 8px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.formItem {
+  border: solid 2px crimson;
+  padding: 15px;
+  background-color: gold;
+  margin: 8px;
+}

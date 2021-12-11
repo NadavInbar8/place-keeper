@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/user.settings.css" />
+  </head>
+  <body onload="init()">
+    <h1>user setting</h1>
+
+    <header class="flex">
+      <button><a href="/index.html">to the main page</a></button>
+      <button><a href="/map.html">to map page</a></button>
+    </header>
+    <main>
+      <div class="main-registered">
+        <form id="userRegister" onsubmit="onSubmit(event)">
+          <div class="formItem" for="email">
+            E-mail: <input id="email" type="email" name="email" />
+          </div>
+          <div class="formItem">
+            <label for="age">Age:</label>
+            <input
+              type="range"
+              id="age"
+              name="age"
+              min="18"
+              max="120"
+              step="1"
+              value="1"
+              onchange="showAge(this.value);"
+            />
+            <span id="sAge">18</span>
+          </div>
+
+          <h2>Colors</h2>
+          <div class="formItem">
+            <label>set background color :</label>
+            <input type="color" id="bgColor" name="bgColor" />
+          </div>
+          <div class="formItem">
+            <label> set text color : </label>
+            <input type="color" id="color" name="color" />
+          </div>
+          <div class="formItem">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" />
+          </div>
+          <div class="formItem">
+            <label for="dob">time of Birth:</label>
+            <input type="time" id="dob" name="dob" />
+          </div>
+          <button>submit</button>
+        </form>
+      </div>
+    </main>
+    <script src="js/storage.service.js"></script>
+    <script src="js/setting.controller.js"></script>
+  </body>
+</html>
